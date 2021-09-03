@@ -16,10 +16,10 @@ html {
 
 .menu_item {
 	position: relative;
-	margin-top: 0.0125em;
+	margin-top: 2px;
 	margin-left: 0.25em;
     margin-right: 0.25em;
-	margin-bottom: 0.0125em;
+	margin-bottom: 2px;
     height: 30px;
     text-align: center;
     background-color: #999;
