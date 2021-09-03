@@ -7,17 +7,35 @@ html {
 }
 
 .container {
+    margin: auto;
+    position: relative;
     height: 240px;
     width: 240px;
-    position: relative;
-    border: 3px solid orange;
+    border: 3px solid orange; 
 }
 
-.container_center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.menu_item {
+	position: relative;
+	margin-top: 0.0125em;
+	margin-left: 0.25em;
+    margin-right: 0.25em;
+	margin-bottom: 0.0125em;
+    height: 30px;
+    text-align: center;
+    background-color: #999;
+    border-radius: 0.5em;
+}
+.menu_item:hover {
+	background-color: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu_text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
