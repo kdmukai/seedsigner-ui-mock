@@ -4,6 +4,8 @@ html {
     font-family: 'Assistant', sans-serif;
     color: white;
     background-color: black;
+    text-align: center;
+    font-size:  22px;
 }
 
 .container {
@@ -12,22 +14,30 @@ html {
     height: 240px;
     width: 240px;
     border: 3px solid orange; 
+    border-radius: 0.25em;
+}
+
+.page_title {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top:  10px;
+    margin-bottom: 10px;
 }
 
 .menu_item {
 	position: relative;
-	margin-top: 2px;
-	margin-left: 0.25em;
-    margin-right: 0.25em;
-	margin-bottom: 2px;
-    height: 30px;
-    text-align: center;
-    background-color: #999;
+	margin-top: 4px;
+	margin-left: 10px;
+    margin-right: 10px;
+	margin-bottom: 4px;
+    height: 36px;
+    text-align: left;
+    background-color: #666;
     border-radius: 0.5em;
 }
 .menu_item:hover {
 	background-color: orange;
-    color: white;
+    color: black;
     font-weight: bold;
     cursor: pointer;
 }
@@ -35,7 +45,7 @@ html {
   margin: 0;
   position: absolute;
   top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 10px;
 }
