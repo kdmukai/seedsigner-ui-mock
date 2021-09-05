@@ -1,15 +1,25 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="seedsigner.css">
+        <script src="https://kit.fontawesome.com/3e6da4809b.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container">
-            <div class="page_title">Menu List</div>
+            <div class="top_nav_button top_nav_button_right"><i class="fa fa-power-off" style="font-size:24px"></i></div>
+            <div class="page_title">Home</div>
+            <div class="clear_both"></div>
 
-            <div class="menu_item"><div class="menu_text">List Item 1</div></div>
-            <div class="menu_item"><div class="menu_text">List Item 2</div></div>
-            <div class="menu_item"><div class="menu_text">List Item 3</div></div>
-            <div class="menu_item"><div class="menu_text">List Item 4</div></div>
+            <table class="big_button_grid">
+                <tr>
+                    <td onclick="location.href='scan/scan.html';"><i class="fas fa-qrcode fa-2x"></i><br>Scan</td>
+                    <td onclick="location.href='seeds/seeds.html';"><i class="fas fa-key fa-2x"></i><br>Seeds</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-tools fa-2x"></i><br>Tools</td>
+                    <td><i class="fas fa-cog fa-2x"></i><br>Settings</td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>

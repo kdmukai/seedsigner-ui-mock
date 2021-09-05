@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../seedsigner.css">
+        <script src="../seedsigner.js"></script>
+        <script src="https://kit.fontawesome.com/3e6da4809b.js" crossorigin="anonymous"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_nav_button top_nav_button_left" onclick="window.history.back();"><i class="fas fa-chevron-left"></i></div>
+            <div class="top_nav_button top_nav_button_right" onclick="open_burger_menu();"><i class="fas fa-bars"></i></div>
+            <div class="page_title page_title_smaller">Add Passphrase</div>
+            <div class="clear_both"></div>
+
+            <br/>
+            <div style="text-align: left; padding-left: 8px">
+                <i class="fas fa-lock" style="color: blue"></i>&nbsp;&nbsp;such-BOATING-acc!d3nt<br/>
+                <i class="fas fa-fingerprint" style="color: blue"></i>&nbsp;&nbsp;cfd0883d
+            </div>
+
+            
+            <br/>
+
+            <div class="menu_item" onclick="location.href='scan.html';"><div class="menu_text_centered"><i class="fas fa-qrcode"></i>&nbsp;&nbsp;Scan PSBT or Seed</div></div>
+            <div class="menu_item" onclick="location.href='../index.html';"><div class="menu_text_centered"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</div></div>
+        </div>
+
+
+        <div class="notes">
+            <li>Fingerprint changes if passphrase changes.</li>
+            <li>Advanced users can confirm that their passphrase is correct by comparing with expected fingerprint.</li>
+            <li>No "Edit Passphrase" button because the back arrow is available above.</li>
+            <li>Clicking either button saves the passphrase.</li>
+            <li>The user cannot return to this flow at that point.</li>
+        </div>
+
+    </body>
+</html>

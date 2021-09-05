@@ -5,7 +5,18 @@ html {
     color: white;
     background-color: black;
     text-align: center;
-    font-size:  22px;
+    font-size:  18px;
+}
+
+button {
+    background-color: orange;
+    font-size: 16px;
+    margin: 8px;
+    padding:  4px;
+    border-radius: 4px;
+}
+button:hover {
+    cursor:  pointer;
 }
 
 .container {
@@ -15,24 +26,62 @@ html {
     width: 240px;
     border: 3px solid orange; 
     border-radius: 0.25em;
+    overflow:  hidden;
 }
 
 .page_title {
     font-size: 25px;
+    width:  240px;
     font-weight: bolder;
-    margin-top:  10px;
-    margin-bottom: 10px;
+    margin-top:  8px;
+    margin-bottom: 8px;
 }
+
+.page_title_smaller {
+    font-size:  20px;
+}
+
+.page_title_smallest {
+    margin-top:  12px;
+    font-size:  18px;
+}
+
+.top_nav_button {
+    position:  absolute;
+    top: 0;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 32px;
+    width:  32px;
+    background-color: #333;
+    border-radius: 4px;
+}
+.top_nav_button:hover {
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+.top_nav_button i {
+  padding-top: 4px;
+}
+.top_nav_button_right { right: 0; }
+.top_nav_button_left { left: 0; }
+.float_left { float: left; }
+.float_right { float: right; }
+.clear_both { clear: both; }
+
+
+.centered { text-align: center; }
 
 .menu_item {
 	position: relative;
 	margin-top: 4px;
-	margin-left: 10px;
-    margin-right: 10px;
+	margin-left: 8px;
+    margin-right: 8px;
 	margin-bottom: 4px;
     height: 36px;
-    text-align: left;
-    background-color: #666;
+    background-color: #333;
     border-radius: 0.5em;
 }
 .menu_item:hover {
@@ -47,5 +96,86 @@ html {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  margin-left: 10px;
+  margin-left: 8px;
+  text-align: left;
+}
+.menu_text_centered {
+  padding-top: 4px;
+  text-align: center;
+}
+
+
+.big_button_grid {
+    margin: auto;
+    border-spacing: 8px;
+    border-collapse: separate;
+}
+
+.big_button_grid td {
+    width:  108px;
+    height:  74px;
+    background-color: #333;
+    border-radius: 5px;
+    text-align: center;
+}
+.big_button_grid td:hover {
+    cursor: pointer;
+    background-color: orange;
+    color: black;
+}
+
+.semi_transparent_overlay {
+    background-color: rgba(32,32,32, 0.75);
+}
+
+.bottom {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 24px;
+    padding-top: 4px;
+    font-size: 16px;
+    border-radius:  4px;
+}
+
+.success {
+    color: green;
+}
+
+.key {
+    position: absolute;
+    right:  0;
+    background-color: #333;
+    font-size: 16px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 2px;
+    height: 24px;
+    width:  36px;
+}
+.key:hover {
+    background-color: orange;
+    text: black;
+    cursor: pointer;
+}
+.key1 {
+    bottom:  170px;
+}
+.key2 {
+    bottom:  110px;
+}
+.key3 {
+    bottom:  50px;
+}
+
+
+.notes {
+    margin-top: 3em;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-left: 1.5em;
+    text-indent:-1.5em;
 }
