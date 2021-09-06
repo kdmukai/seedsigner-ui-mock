@@ -36,13 +36,14 @@
 
 
             <div class="bottom_menu">
-                <div class="menu_item" onclick="location.href='../index.html';"><div class="menu_text_centered">Next</div></div>
+                <div class="menu_item" onclick="location.href='sign_psbt.html';"><div class="menu_text_centered">Next</div></div>
             </div>
         </div>
 
 
         <div class="notes">
-            <li>Skip this screen if change can't be calculated (would instead just be listed as one of the recipients, right?).</li>
+            <li>Skip this screen if there's no change utxo OR should we explicitly show "Change: 0 sats" because that's still important info?</li>
+            <li>We do NOT need to prompt for the wallet coordinator next since we can just use the same QR settings that we saw in the PSBT presentation.</li>
         </div>
     </body>
 </html>
