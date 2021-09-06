@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../seedsigner.css">
+        <script src="../seedsigner.js"></script>
+        <script src="https://kit.fontawesome.com/3e6da4809b.js" crossorigin="anonymous"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_nav_button top_nav_button_left" onclick="window.history.back();"><i class="fas fa-chevron-left"></i></div>
+            <div class="top_nav_button top_nav_button_right" onclick="open_burger_menu();"><i class="fas fa-bars"></i></div>
+            <div class="page_title page_title_smallest">Seed Options</div>
+            <div class="clear_both"></div>
+
+            <div style="margin-bottom: 30px; text-align: left; margin-left: 70px;">
+                <i class="fas fa-fingerprint" style="color: blue"></i>&nbsp;&nbsp;cfd0883d<br/>
+                <i class="fas fa-lock" style="color: blue"></i>&nbsp;&nbsp;********
+            </div>
+
+            <div class="bottom_menu">
+                <div class="menu_item" onclick="location.href='seed_words_warning.html';"><div class="menu_text_centered">View Seed Words</div></div>
+                <div class="menu_item" onclick="location.href='xpub_sig_type.html';"><div class="menu_text_centered">Export Xpub</div></div>
+                <div class="menu_item" onclick="location.href='seed_qr_warning.html';"><div class="menu_text_centered">Export Seed as QR</div></div>
+            </div>
+        </div>
+
+
+        <div class="notes">
+            <li>No option to add or edit passphrase.</li>
+            <li>Hide passphrase lock line entirely if no passphrase set.</li>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../seedsigner.css">
+        <script src="../seedsigner.js"></script>
+        <script src="https://kit.fontawesome.com/3e6da4809b.js" crossorigin="anonymous"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_nav_button top_nav_button_left" onclick="window.history.back();"><i class="fas fa-chevron-left"></i></div>
+            <div class="top_nav_button top_nav_button_right" onclick="open_burger_menu();"><i class="fas fa-bars"></i></div>
+            <div class="page_title page_title_smallest">Review PSBT</div>
+            <div class="clear_both"></div>
+
+            <div style="text-align: left; margin-top: 16px; margin-left:8px; line-height: 1.8em;">
+                <i class="fab fa-bitcoin" style="color: orange;"></i>&nbsp;&nbsp;832,582 sats<br/>
+                <i class="fas fa-exchange-alt" style="color: blue;"></i>&nbsp;&nbsp;8 inputs - fee <i class="fas fa-arrow-right" style="color: blue;"></i> 5 outputs<br>
+                <i class="fas fa-chart-pie" style="color: blue;"></i>&nbsp;&nbsp;2 sats/vB = 875 sat fee<br>
+                <i class="fas fa-redo-alt" style="color: blue;"></i>&nbsp;&nbsp;RBF enabled<br>
+
+
+            </div>
+
+
+            <div class="bottom_menu">
+                <div class="menu_item" onclick="location.href='review_psbt_2.html';"><div class="menu_text_centered">Next</div></div>
+            </div>
+        </div>
+
+
+        <div class="notes">
+            <li>Next screen will iterate through outputs/recipients. Will not list the inputs as that's unlikely to be information that even hardcore users would care to verify.</li>
+        </div>
+    </body>
+</html>

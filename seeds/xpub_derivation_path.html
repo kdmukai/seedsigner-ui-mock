@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../seedsigner.css">
+        <script src="../seedsigner.js"></script>
+        <script src="https://kit.fontawesome.com/3e6da4809b.js" crossorigin="anonymous"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_nav_button top_nav_button_left" onclick="window.history.back();"><i class="fas fa-chevron-left"></i></div>
+            <div class="top_nav_button top_nav_button_right" onclick="open_burger_menu();"><i class="fas fa-bars"></i></div>
+            <div class="page_title page_title_smallest">Export Xpub</div>
+            <div class="clear_both"></div>
+
+            <div class="bottom_menu">
+                <div class="menu_item" onclick="location.href='xpub_coordinator.html';"><div class="menu_text">Native Segwit</div></div>
+                <div class="menu_item" onclick="location.href='xpub_coordinator.html';"><div class="menu_text">Nested Segwit (legacy)</div></div>
+                <div class="menu_item" onclick="location.href='xpub_coordinator.html';"><div class="menu_text">Taproot</div></div>
+                <div class="menu_item" onclick="location.href='';"><div class="menu_text">Custom Derivation</div></div>
+            </div>
+        </div>
+
+
+        <div class="notes">
+            <li>Taproot just in there as a reminder.</li>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../seedsigner.css">
+        <script src="../seedsigner.js"></script>
+        <script src="https://kit.fontawesome.com/3e6da4809b.js" crossorigin="anonymous"></script>
+        <style>
+            .amount {
+                font-size:  24px;
+            }
+            .addr_container {
+                margin-top:  6px;
+                margin-left: 12px;
+                margin-right: 12px;
+                background-color: #333;
+                padding:  4px;
+                border-radius:  8px;                
+                font-size:  22px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_nav_button top_nav_button_left" onclick="window.history.back();"><i class="fas fa-chevron-left"></i></div>
+            <div class="top_nav_button top_nav_button_right" onclick="open_burger_menu();"><i class="fas fa-bars"></i></div>
+            <div class="page_title page_title_smallest">Review PSBT</div>
+            <div class="clear_both"></div>
+
+            <div style="margin-top: 12px;">Change:</div>
+            <div class="amount">67,836 sats</div>
+
+            <div class="bitcoin_address addr_container">
+                <span class="addr_feature">3GGWyZT</span> <span class="addr_misc">CWSto2j2ub</span><br/>
+                <span class="addr_misc">QNobCCZJzq</span> <span class="addr_feature">DGN9U3e</span>
+            </div>
+
+
+            <div class="bottom_menu">
+                <div class="menu_item" onclick="location.href='../index.html';"><div class="menu_text_centered">Next</div></div>
+            </div>
+        </div>
+
+
+        <div class="notes">
+            <li>Skip this screen if change can't be calculated (would instead just be listed as one of the recipients, right?).</li>
+        </div>
+    </body>
+</html>

@@ -11,7 +11,7 @@
         <div class="container">
             <div class="top_nav_button top_nav_button_left" onclick="window.history.back();"><i class="fas fa-chevron-left"></i></div>
             <div class="top_nav_button top_nav_button_right" onclick="open_burger_menu();"><i class="fas fa-bars"></i></div>
-            <div class="page_title page_title_smaller">Add Passphrase</div>
+            <div class="page_title page_title_smallest">Confirm Passphrase</div>
             <div class="clear_both"></div>
 
             <br/>
@@ -23,13 +23,20 @@
             
             <br/>
 
-            <div class="menu_item" onclick="location.href='scan.html';"><div class="menu_text_centered"><i class="fas fa-qrcode"></i>&nbsp;&nbsp;Scan PSBT or Seed</div></div>
-            <div class="menu_item" onclick="location.href='../index.html';"><div class="menu_text_centered"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</div></div>
+            <div class="bottom_menu">
+                <div class="menu_item" onclick="location.href='../scan/scan.html';"><div class="menu_text_centered"><i class="fas fa-qrcode"></i>&nbsp;&nbsp;Scan PSBT or Seed</div></div>
+                <div class="menu_item" onclick="location.href='../index.html';"><div class="menu_text_centered"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</div></div>
+            </div>
         </div>
 
 
         <div class="notes">
-            <li>Fingerprint changes if passphrase changes.</li>
+            <li>
+                If we were in the middle of the PSBT flow and the passphrase now enables the seed to sign the PSBT, we automatically skip this screen and jump straight to:<br/>
+                <div class="menu_item" onclick="location.href='../psbt/review_psbt_1.html';"><div class="menu_text_centered">Review PSBT</div></div>
+            </li>
+            <br/>
+            <li>Different passphrases yield different fingerprints</li>
             <li>Advanced users can confirm that their passphrase is correct by comparing with expected fingerprint.</li>
             <li>No "Edit Passphrase" button because the back arrow is available above.</li>
             <li>Clicking either button saves the passphrase.</li>

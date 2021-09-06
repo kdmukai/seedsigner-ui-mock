@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../seedsigner.css">
+        <script src="../seedsigner.js"></script>
+        <script src="https://kit.fontawesome.com/3e6da4809b.js" crossorigin="anonymous"></script>
+        <style>
+            .number {
+                height: 16px;
+                width: 18px;
+                background-color: #333;
+                border-radius: 4px;
+                color: blue;
+                font-weight: bold;
+                text-align: center;
+            }
+            .word {
+                height:  16px;
+                width: 96px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_nav_button top_nav_button_left" onclick="window.history.back();"><i class="fas fa-chevron-left"></i></div>
+            <div class="top_nav_button top_nav_button_right" onclick="open_burger_menu();"><i class="fas fa-bars"></i></div>
+            <div class="page_title page_title_smallest">Seed Words</div>
+            <div class="clear_both"></div>
+            
+            <table style="margin-left:8px;">
+                <tr>
+                    <td class="number">13</td><td class="word"> ball</td>
+                    <td class="number">19</td><td class="word"> replace</td>
+                </tr>
+                <tr>
+                    <td class="number">14</td><td class="word"> hidden</td>
+                    <td class="number">20</td><td class="word"> monster</td>
+                </tr>
+                <tr>
+                    <td class="number">15</td><td class="word"> lobster</td>
+                    <td class="number">21</td><td class="word"> spirit</td>
+                </tr>
+                <tr>
+                    <td class="number">16</td><td class="word"> swift</td>
+                    <td class="number">22</td><td class="word"> hollow</td>
+                </tr>
+                <tr>
+                    <td class="number">17</td><td class="word"> foil</td>
+                    <td class="number">23</td><td class="word"> charge</td>
+                </tr>
+                <tr>
+                    <td class="number">18</td><td class="word"> whisper</td>
+                    <td class="number">24</td><td class="word"> yellow</td>
+                </tr>
+            </table>
+
+            <div class="bottom_menu">
+                (button scenarios below)
+            </div>
+        </div>
+
+
+        <div class="notes">
+            <li>Can reach this via:</li>
+            <ul>
+                <li>
+                    Manual seed entry or creating a new seed (dice or camera entropy). Proceeds to seed validation:<br/>
+                    <div class="menu_item" onclick="location.href='seed_valid.html';"><div class="menu_text_centered">Next</div></div>
+                </li>
+                <br/>
+                <li>
+                    "Seeds" > (click on one of the in-memory seeds) > View Seed Words. Seed has already been validated so just return to:<br/>
+                    <div class="menu_item" onclick="location.href='seed_options.html';"><div class="menu_text_centered">Seed Options</div></div>
+                </li>
+            </ul>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../seedsigner.css">
+        <script src="../seedsigner.js"></script>
+        <script src="https://kit.fontawesome.com/3e6da4809b.js" crossorigin="anonymous"></script>
+        <style>
+            .amount {
+                font-size:  24px;
+            }
+            .addr_container {
+                margin-top:  6px;
+                margin-left: 32px;
+                margin-right:  32px;
+                background-color: #333;
+                padding:  4px;
+                border-radius:  8px;
+                font-size:  22px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_nav_button top_nav_button_left" onclick="window.history.back();"><i class="fas fa-chevron-left"></i></div>
+            <div class="top_nav_button top_nav_button_right" onclick="open_burger_menu();"><i class="fas fa-bars"></i></div>
+            <div class="page_title page_title_smallest">Review PSBT</div>
+            <div class="clear_both"></div>
+
+            <div style="margin-top: 8px;">Recipient 0:</div>
+            <div class="amount">172,000 sats</div>
+
+            <div class="bitcoin_address addr_container">
+                <span class="addr_feature">bc1q4c3</span> <span class="addr_misc">sthn389</span><br/>
+                <span class="addr_misc">m4kmyj89ucyza4</span><br/>
+                <span class="addr_misc">rt93stm</span> <span class="addr_feature">sxvfd5v</span>
+            </div>
+
+
+            <div class="bottom_menu">
+                <div class="menu_item" onclick="location.href='review_psbt_3.html';"><div class="menu_text_centered">Next</div></div>
+            </div>
+        </div>
+
+
+        <div class="notes">
+            <li>Displays one screen per recipient. Err on the side of being explicit about which addrs are getting what amounts.</li>
+            <li>Maximize font size wherever possible for best readability.</li>
+            <li>Stealing Strike's design for highlighting first/last 7 chars of address.</li>
+            <li>Zero-index the recipient numbers to match utxos or one-index for human readbility?</li>
+        </div>
+    </body>
+</html>

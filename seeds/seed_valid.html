@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../seedsigner.css">
+        <script src="../seedsigner.js"></script>
+        <script src="https://kit.fontawesome.com/3e6da4809b.js" crossorigin="anonymous"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_nav_button top_nav_button_left" onclick="window.history.back();"><i class="fas fa-chevron-left"></i></div>
+            <div class="top_nav_button top_nav_button_right" onclick="open_burger_menu();"><i class="fas fa-bars"></i></div>
+            <div class="page_title">Seed Valid</div>
+            <div class="clear_both"></div>
+
+            <div class="success" style="margin-top: 8px;">
+                <i class="far fa-check-circle fa-2x"></i>
+            </div>
+            <div style="margin-bottom: 16px;">Fingerprint:<br/>
+                <i class="fas fa-fingerprint" style="color: blue"></i>&nbsp;&nbsp;a9f0bc34
+            </div>
+
+            <div class="bottom_menu">
+                <div class="menu_item" onclick="location.href='../scan/scan.html';"><div class="menu_text_centered"><i class="fas fa-qrcode"></i>&nbsp;&nbsp;Scan PSBT or Seed</div></div>
+                <div class="menu_item" onclick="location.href='advanced_prompt.html';"><div class="menu_text_centered"><i class="fas fa-cog"></i>&nbsp;&nbsp;Advanced</div></div>
+            </div>
+
+        </div>
+
+        <div class="notes">
+            <li>Can reach this from:
+                <ul>
+                    <li>Manual 12/24 word entry, seed QR scan.</li>
+                    <li>Creating a new seed (dice or camera entropy).</li>
+                    <li>
+                        After scanning a PSBT and then loading a seed.
+                        <ul>
+                            <li>If the just-loaded seed can sign the PSBT, we'll automatically skip this screen and go straight to:<br/>
+                            <div class="menu_item" onclick="location.href='';"><div class="menu_text_centered">Review PSBT</div></div></li>
+                            <li>If the just-loaded seen can't sign the PSBT, it may be able to after a passphrase is added.</li>
+                        </ul>
+                    </li>
+                </ul>
+            <li>Show the fingerprint to get users used to identifying seeds this way?</li>
+            <li>(note that fingerprint will change if passphrase is added)</li>
+            <li>If the user is going to add a passphrase, this is their ONLY chance!</li>
+            <li>If Advanced Options are disabled in Uncle Jim Settings&trade;, button is hidden.</li>
+        </div>
+
+    </body>
+</html>

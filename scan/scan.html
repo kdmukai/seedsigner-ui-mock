@@ -28,10 +28,18 @@
             </div>
         </div>
 
+        <div class="notes">
+            If you scan a seed QR:
+            <div class="menu_item" onclick="location.href='../seeds/seed_valid.html';"><div class="menu_text_centered">continue to seed validation</div></div>
+            <br/>
 
-        <br/>
-        <br/>
-        <button onclick="location.href='seed_qr_saved.html';">continue for Seed QR flow <i class="fas fa-chevron-right"></i></button><br/>
-        <button onclick="">continue for PSBT flow <i class="fas fa-chevron-right"></i></button>
+            If you scan a PSBT and don't have any signing seeds loaded:
+            <div class="menu_item" onclick="location.href='../seeds/add_a_seed.html';"><div class="menu_text_centered">continue to load seed</div></div>
+            <br/>
+
+            If you scan a PSBT and have a signing seed loaded:
+            <div class="menu_item" onclick="location.href='../psbt/review_psbt_1.html';"><div class="menu_text_centered">continue to PSBT details</div></div>
+            <br/>
+        </div>
     </body>
 </html>
